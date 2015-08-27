@@ -12,5 +12,9 @@
     "bootstrap-styl": "^4.0.5",
     "harp": "^0.17.0",
     "nib": "^1.1.0"
+  },
+  "scripts": {
+    "run": "./node_modules/.bin/harp server",
+    "deploy": "./node_modules/.bin/harp compile . build && rm -rf build"
   }
 }
