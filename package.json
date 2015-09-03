@@ -1,17 +1,25 @@
 {
   "name": "moonzoodata",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC",
+  "description": "Static site for Moon Zoo data",
+  "author": "Roger Hutchings <roger@hutchin.gs> (https://github.com/rogerhutchings/)",
+  "license": "Apache-2.0",
   "dependencies": {
     "bootstrap-styl": "^4.0.5",
     "harp": "^0.17.0",
-    "nib": "^1.1.0"
+    "nib": "^1.1.0",
+    "publisssh": "^1.0.0"
   },
   "scripts": {
-    "run": "./node_modules/.bin/harp server",
-    "deploy": "./node_modules/.bin/harp compile . build && rm -rf build"
+    "start": "./node_modules/.bin/harp server",
+    "deploy": "./node_modules/.bin/harp compile . build && publisssh ./build zooniverse-static/data.moonzoo.org && rm -rf build"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/zooniverse/moonzoodata.git"
+  },
+  "homepage": "https://github.com/zooniverse/moonzoodata",
+  "bugs": {
+    "url": "https://github.com/zooniverse/moonzoodata/issues"
   }
 }
