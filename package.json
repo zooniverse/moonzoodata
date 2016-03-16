@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "bootstrap-styl": "^4.0.5",
-    "harp": "^0.17.0",
+    "harp": "^0.20.1",
     "nib": "^1.1.0",
     "publisssh": "^1.0.0"
   },
